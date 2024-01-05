@@ -11,12 +11,12 @@ num = randint(LOWER_LIMIT, UPPER_LIMIT)
 print(num)
 number = int(input('Введите число:'))
 count = 0
-TRY = 2
+TRY = 10
 
 
-while count > TRY:
-    print('Не угадали')
-else:
+while count < TRY:
+    
+
     
     if number > num:
         count = count + 1
@@ -30,6 +30,7 @@ else:
     
     else: 
          print("Верно")
+         break
          
 
 
