@@ -10,11 +10,11 @@ from random import randint
 num = randint(LOWER_LIMIT, UPPER_LIMIT)
 print(num)
 number = int(input('Введите число:'))
-count = 0
+count = 1
 TRY = 10
 
 
-while count < TRY:
+while count <= TRY:
     
 
     
@@ -22,11 +22,17 @@ while count < TRY:
         count = count + 1
         print("Больше")
         number = int(input('Введите число:'))
+        if count == TRY:
+            print("Не угадали")
+            break
     
     elif number < num:
         count = count + 1        
         print("Меньше")
         number = int(input('Введите число:'))
+        if count == TRY:
+            print("Не угадали")
+            break
     
     else: 
          print("Верно")
